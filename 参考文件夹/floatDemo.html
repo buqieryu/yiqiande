@@ -1,0 +1,266 @@
+·<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>浮动布局</title>
+</head>
+<style type="text/css">
+*{
+margin: 0px;
+padding: 0px;
+
+}
+
+.wrap{
+width: 800px;
+height: 500px;
+background-color: yellow;
+border: 1px solid black;
+}
+/*1float 浮动元素不会超出父元素的边界*/
+/**2元素会浮动，但里面的内容不会跟着浮动到某个模块下边
+*3元素x要浮动，首先看x之上的元素y
+
+如果x没有浮动，x紧挨着y的下边界向左（右）浮动
+如果y浮动，x紧挨着y的右（左）边界*/
+/*但如果父试图容不下x，x只能跑到下一行*/
+/*一个元素要浮动，肯定要影响它上面的元素
+一个元素要浮动，肯定要影响他下边的元素*/
+.red{
+width: 100px;
+height: 200px;
+background-color: red;
+border: 1px solid black;
+float: left;
+}
+.blue{
+width: 200px;
+height: 100px;
+background-color: blue;
+border: 1px solid black;
+/*float: left;*/
+}
+.pink{
+width:750px;
+height: 50px;
+background-color: pink;
+border: 1px solid black;
+float: left;
+}
+.second{
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+  border: 1px solid black;
+background-color: pink;
+}
+
+.left{
+width: 100px;
+height: 100px;
+background-color: yellow;
+border: 1px solid black;
+float: left;
+}
+.third{
+background-color: white;
+/*float:left;*/
+}
+.right{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  float:right;
+}
+.heightdiv{
+width: 500px;
+/*height: 300px;*/
+border: 1px solid black;
+background-color: blue;
+overflow: hidden;
+
+}
+.heightleft{
+
+width: 100px;
+height: 200px;
+border: 1px solid black;
+background-color: red;
+float: left;
+}
+/*clear要写在受到浮动影响的标签里面*/
+.heightright{
+width: 100px;
+height: 100px;
+border: 1px solid black;
+background-color: yellow;
+float: right;
+}
+.hiddentest{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: lightgreen;
+overflow-y: hidden;
+
+
+}
+
+/*vsibility 隐藏 但是元素还是存在那个位置*/
+/*display：none 不显示，元素已经不在哪个位置了*/
+.father{
+width: 300px;
+height: 300px;
+background-color: blue;
+border: 1px dashed black;
+}
+.sonone{
+width: 100px;
+height: 100px;
+background-color: red;
+
+}
+.sontwo{
+width: 100px;
+  height: 100px;
+  background-color:pink;
+
+}
+
+.textdiv{
+width: 600px;
+height: 600px;
+background-color: pink;
+border: 1px dashed black;
+}
+
+.divone{
+width: 300px;
+height: 300px;
+
+display: inline-block;
+
+}
+
+.divtwo{
+width: 300px;
+height: 300px;
+float: right;
+/*display: inline-block;*/
+
+}
+.div{
+width: 500px;
+height: 500px;
+border: 1px solid red;
+}
+.div1,.div2,.div3,.div4,.div5{
+width: 100px;
+height: 100px;
+border: 1px solid red;
+float: left;
+box-sizing: border-box;
+}
+.div6{
+  width: 340px;
+height: 150px;
+background-color: blue;
+float: left;
+/*display: none;*/
+box-sizing: border-box;
+}
+.div7{
+
+
+
+
+}
+
+
+
+
+
+
+
+</style>
+<body>
+<div class="wrap">
+  <div class="red"></div>
+
+<div class="blue">
+ff
+</div>
+<div class="pink">
+
+</div>
+</div>
+
+
+<div class="second">
+
+  <div class="left">
+
+  </div>
+
+
+<div class="right">
+
+</div>
+<p class="third">嘎嘎嘎dsd嘎UI时间哈哈哈哈的界降低欧式
+  哈巴vhbdjbad
+</div>
+
+<div class="heightdiv">
+<div class="heightleft">
+
+</div>
+
+<div class="heightright">
+
+</div>
+
+</div>
+
+<div class="hiddentest"><nobr>
+大王叫我来巡山，抓个和尚做晚餐
+大王叫我来巡山，抓个和尚做晚餐
+大王叫我来巡山，抓个和尚做晚餐
+大王叫我来巡山，抓个和尚做晚餐
+大王叫我来巡山，抓个和尚做晚餐
+</nobr>
+</div>
+<div class="father">
+<div class="sonone"></div>
+<div class="sontwo"></div>
+
+</div>
+<div class="textdiv">
+<div class="divone"><img src="102.png" alt="">ghghgjhgjhjkjjgj</div>
+
+<div class="divtwo"><img src="102.png" alt="">ghghgjhgjhjkjjgj</div>
+
+</div>
+</div>
+<div class="div">
+<div class="div1">1</div>
+<div class="div2">2</div>
+<div class="div3">3</div>
+<div class="div4">4</div>
+<div class="div5">5</div>
+<div class="div6"></div>
+<div class="div7"></div>
+<div class="div8"></div>
+<div class="div9"></div>
+<div class="div10"></div>
+<div class="div11"></div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

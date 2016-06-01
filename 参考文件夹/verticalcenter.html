@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>verticalcenter</title>
+  <style type="text/css">
+  /*1>承载文字内容的高度A
+     文字行高（line-height）
+     B=A;
+     (要求必须知道
+       承载文字的东西的高度，
+       文字为一行)*/
+    /*2>元素A要居中（元素A的高度是知道的
+       直接让元素A在father里面的top：50%）
+       A自己在回去自己高度的一半
+       margin-top：-（heightA/2）*/
+    /*3 第一步：给A增加一个爹
+           第二步：让A的爹以table形式展示
+           第三步：让A以table-cell展示
+           第四步：给A设置
+           vertical-align:middle*/
+     /*4> 元素A要垂直居中（元素A有高度）
+              1  给A找一个哥哥 让哥浮动left
+              2  让哥哥的高度为爹的一半50%
+              3  让A  clean：both
+              4  哥哥：margin-bottom：-（heightA/2）
+              5  让A：position：relative；*/
+      /*5>A元素要垂直居中
+        1  先给A找一个哥哥
+        2  A和 哥哥 同时设置
+           inline-block
+           middle
+        3  哥哥的高度为父亲的高度（100%）
+          （注意
+          ：两个inline-block之间会产生空隙问题）*/
+.big{
+width: 300px;
+height: 200px;
+background-color:pink;
+/*text-align: center;*/
+/*display: table;*/
+/*position: relative;
+top:50%;*/
+    }
+.big p{
+width: 300px;
+height: 100px;
+  background-color: lightblue;
+  line-height: 100px;
+}
+
+
+
+
+.green{
+/*width: 50px;*/
+height: 50px;
+background-color: lightgreen;
+padding-top: 10px;
+
+
+/*display: inline-block;
+vertical-align: middle;*/
+
+/*clear: both;*/
+/*position: relative;*/
+
+/*position: absolute;
+top:50%;
+margin-top: -25px;*/
+/*display: table-cell;
+vertical-align: middle;
+text-align: center;*/
+}
+.kong{
+  background-color: yellow;
+  width: 0px;
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+
+
+
+
+
+  /*width: 30px;
+height: 50%;
+background-color: yellow;
+float: left;
+/*margin-top: 25px;*/
+/*margin-bottom:-25px;*/
+
+
+}
+
+  </style>
+</head>
+<body>
+  <div class="big">
+
+    <!-- <div class="kong"></div> -->
+    <!-- <p>我是段落</p> -->
+  <div class="green">和改革和好几个</div>
+  </div>
+</body>
+</html>

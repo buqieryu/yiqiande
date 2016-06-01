@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <!--border属性修饰边框  -->
+<!--bgcolor背景颜色  -->
+  <table border="10">
+<!-- cosspan是行中的列，横向显示 -->
+    <tr>
+      <td>测试数据</td>
+      <td colspan="2">测试数据</td>
+
+      <td>测试数据</td>
+    </tr>
+    <tr>
+      <!--rowspan是上下合并  -->
+      <td>测试数据</td>
+      <td rowspan="2">测试数据</td>
+
+      <td>测试数据</td>
+    </tr>
+    <tr>
+      <td background="222.png">测试数据</td>
+      <td>测试数据</td>
+      <td bgcolor="blue">测试数据</td>
+      <td>测试数据</td>
+    </tr>
+  </table>
+<table border="1">
+  <tr>
+    <th>姓名</th>
+    <th>年龄</th>
+    <th>学号</th>
+  </tr>
+  <tr>
+    <td>刘亚</td>
+    <td>16</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>李强</td>
+    <td>22</td>
+    <td>24</td>
+  </tr>
+</table>
+<table border="1">
+  <tr>
+    <th>姓名</th>
+    <td>来言</td>
+    <td>张</td>
+  </tr>
+  <tr>
+    <th>年龄</th>
+    <td>13</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <th>学号</th>
+    <td>11</td>
+    <td>55</td>
+  </tr>
+</table>
+<!-- table[border属性=1]>tr*3>td{测试数据}*4 -->
+  <table border="1">
+    <caption>测试数据表</caption>
+    <tr>
+      <td>测试数据</td>
+      <td>测试数据</td>
+      <td>测试数据</td>
+      <td>测试数据</td>
+    </tr>
+    <tr>
+      <td>测试数据</td>
+      <td>测试数据</td>
+      <td>测试数据</td>
+      <td>测试数据</td>
+    </tr>
+    <tr>
+      <td>测试数据</td>
+      <td>测试数据</td>
+      <td>测试数据</td>
+      <td>测试数据</td>
+    </tr>
+  </table>
+  <table  border="1">
+    <caption>课程表</caption>
+    <tr>
+      <th>日期</th>
+      <td>星期一</td>
+      <td>星期二</td>
+      <td>星期三</td>
+      <td>星期四</td>
+      <td>星期五</td>
+    </tr>
+    <tr>
+      <th>上午</th>
+      <td>等等</td>
+      <td>对对对</td>
+      <td>等等</td>
+      <td>等等</td>
+      <td>等等</td>
+    </tr>
+    <tr>
+      <th>下午</th>
+      <td>呃呃呃</td>
+      <td>到底</td>
+      <td>呵呵</td>
+      <td>到底</td>
+      <td>啊啊</td>
+    </tr>
+  </table>
+
+
+
+
+
+
+
+<!--cellspacing 单元格之间的距离
+cells  -->
+<table border="1" bgcolor="gress">
+  <caption>蓝鸥学生表</caption>
+  <tr>
+    <td colspan="6" align="center">姓名</td>
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td rowspan="6" align="center">测试数据</td>cells
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="2" align="center">测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td rowspan="2" colspan="2" colgroup="2" align="center">测试数据</td>
+
+
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+
+  </tr>
+</table>
+
+
+
+
+
+<table border="1" cellspacing="2" background="222.png">
+  <tr>
+    <td bgcolor="#aaa">测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td rowspan="3">测试数据</td>
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+
+  </tr>
+  <tr>
+
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="2">测试数据</td>
+
+    <td>测试数据</td>
+    <td colspan="2">测试数据</td>
+
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="5">测试数据</td>
+
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="6">测试数据</td>
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="6">测试数据</td>
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="6">测试数据</td>
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="6">测试数据</td>
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="6">测试数据</td>
+
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td colspan="6">测试数据</td>
+  </tr>
+</table>
+
+</body>
+</html>

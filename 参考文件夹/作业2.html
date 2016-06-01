@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style media="screen" type="text/css">
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+      .x{
+        width: 100%;
+        height: 1200px;
+        background-color: lightgray;
+      }
+      .y{
+        width: 250px;
+        height: 700px;
+        background-color: white;
+        margin: 0 auto;
+      }
+      .a{
+        width: 242px;
+        height: 140px;
+        border: 1px solid gainsboro;
+        position: relative;
+        top: 2px;
+        left: 2px;
+        border-radius: 10px
+      }
+      .aa{
+        width: 242px;
+        height: 30px;
+        background-color: whitesmoke;
+        border-bottom: 1px solid gainsboro;
+      }
+      .bb{
+        width: 242px;
+        height: 80px;
+        background: white;
+        border-bottom: 1px solid gainsboro;
+      }
+      .bba{
+        font-size: 12px;
+        position: relative;
+        top: 15px;
+        left: 30px;
+      }
+      .bbb{
+        font-size: 12px;
+        position: relative;
+        top: 25px;
+        left: 30px;
+        letter-spacing: 3px;
+      }
+
+      .onea{
+        color: red;
+        float: left;
+        font-size: 15px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      .oneb{
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+        top: 7px;
+        left: 15px;
+      }
+      #a input{
+        width: 55px;
+        height: 25px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+        border: 1px solid red;
+        border-radius: 13px;
+        background-color: red;
+        position: relative;
+        bottom: 22px;
+        left: 150px
+      }
+      .cc{
+        width: 242px;
+        height: 20px;
+
+      }
+      .cc ul li{
+        float: left;
+        font-size: 12px;
+        position: relative;
+        top: 5px;
+        left: 35px;
+        margin: 0px 15px;
+        color: red;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      .b{
+        width: 242px;
+        height: 90px;
+        position: relative;
+        top: 10px;
+        left: 2px;
+      }
+      .b img{
+        position: relative;
+        bottom: 2px;
+        left: 1px;
+      }
+      .c{
+        width: 242px;
+        height: 180px;
+        position: relative;
+        top: 18px;
+        left: 2px;
+      }
+      .c img{
+        position: relative;
+        left: 2px;
+      }
+      .d{
+        width: 242px;
+        height: 240px;
+        background-color: white;
+        border: 1px solid gainsboro;
+        position: relative;
+        top: 26px;
+        left: 2px;
+        border-radius: 10px;
+      }
+      .dx{
+        width: 230px;
+        height: 230px;
+        /*background-color: red;*/
+        position: relative;
+        top: 5px;
+        left: 6px;
+      }
+      .da{
+        width: 225px;
+        height: 30px;
+        background-color: white;
+      }
+      #b{
+        font-size: 15px;
+        color: red;
+        position: relative;
+        top: 8px;
+        left: 6px;
+      }
+      #c{
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        bottom: 12px;
+        left: 85px
+      }
+      #d{
+        position: relative;
+        bottom: 32px;
+        float: right;
+      }
+      .db{
+        width: 230px;
+        height: 22px;
+        border: 1px solid gainsboro;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        /*background-color: pink;*/
+      }
+      .db p{
+        float: left;
+        position: relative;
+        letter-spacing: 5px;
+        top: -8px;
+        left: 6px;
+      }
+      #zhia{
+        width:70px;
+        text-align: center;
+        border: 1px solid gainsboro;
+        border-bottom: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+      }
+      #zhib{
+        width:70px;
+        text-align: center;
+        border: 1px solid gainsboro;
+        border-bottom: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      #zhic{
+        width:70px;
+        text-align: center;
+        border: 1px solid gainsboro;
+        border-bottom: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: relative;
+        top: -24px;
+      }
+      #dca{
+        width: 235px;
+        height: 180px;
+        position: relative;
+        top: -24px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="x">
+      <div class="y">
+        <div class="a">
+          <div class="aa">
+              <div class="onea">LOAD</div>
+              <div class="oneb">登录</div>
+          </div>
+          <div class="bb">
+            <div class="bba">
+              <form class="first" action="index.html" method="get">
+                用户名:
+                <input type="txet" name="name" style="width: 100px;">
+                <input type="checkbox" name="checkbox" value="记住我">记住我
+              </form>
+            </div>
+            <div class="bbb">
+              <form>
+                密码:
+                <input type="password" name="password" style="width: 100px;">
+                <div id="a">
+                <input type="submit" name="sub" value="登录" >
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="cc">
+            <ul>
+              <li><a href="###">新用户注册</a></li>
+              <li><a href="###">忘记密码了</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="b">
+          <a href="http://www.baidu.com"><img src="123.png" alt="123"></a>
+        </div>
+        <div class="c">
+          <a href="http://www.baidu.com"><img src="1.png" alt="1.1"></a>
+        </div>
+        <div class="d">
+          <div class="dx">
+            <div class="da">
+              <p id="b">COUPONS</p>
+              <p id="c">抢券儿</p>
+              <a href=""><img src="da.png" alt="da.png" id="d"></a>
+            </div>
+            <div class="db">
+              <p id="zhia">人气</p>
+              <p id="zhib">推荐</p>
+              <p id="zhic">最新</p>
+            </div>
+            <div class="dc">
+              <img src="niu.png" alt="" id="dca">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

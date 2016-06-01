@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <P>我是表单</P>
+
+
+<!--form：action动作url->http://www.baidu.com  -->
+<form action="http://www.baidu.com">
+  姓名：
+<input type="text" name="name">
+<br>
+  年龄：
+<input type="text" name="age">
+<br>
+账号：
+<input type="text" name="account">
+<br>
+<!--type:text正常的输入框
+        password是密码输入框 安稳输入框  -->
+密码：
+<input type="password" name="password">
+<br>
+<!--  name当名字一样时候只能选择一样，不一样时候可以多选 radio单选框-->
+性别：
+<input type="radio" name="name" value="male">男
+<input type="radio" name="name" value="female">女
+<br>
+兴趣爱好：
+<input type="checkbox" name="duoxuan" value="zhai">玩
+<input type="checkbox" name="duoxuan" value="kan">看
+<input type="checkbox" name="duoxuan" value="lvyou">旅游
+<br>
+<!-- selected默认选择🐘 -->
+出生年月：
+<select name="selected">
+  <option value="1990">九零</option>
+  <option value="1991">九一</option>
+  <option value="1992"selected="selected">九二</option>
+  <option value="1993">九三</option>
+
+</select><br>
+
+
+<!-- 为input标签定义标注 -->
+<label>我是一个label</label>
+<!-- fieldset定义一组相关的表元素，并用外框包围起来 -->
+<!-- legend丁一整个fieldset元素的标题 -->
+<fieldset>
+  <legend>我是一个legend
+<br>
+账号：
+<input type="text" name="name" valu="">
+</legend>
+</fieldset>
+<fieldset>
+<legend>
+ 我的学历
+<br>
+小学：
+<input type="text" name="name" value="">xiaoxue
+<br>
+ 中学：
+<input type="text" name="name" value="">
+</legend>
+</fieldset>
+<!-- type：button不同默认value是没有值得
+          submit默认value是“提交查询”
+          reset 默认value是”“重置”  -->
+<input type="button" name="bth" value="注册">
+<input type="submit" name="name" value="提交">
+<input type="reset" name="reset" value="重置">
+<br>
+<!--  按钮>form>action>到网页地址-->
+<!-- textarea 文本域 是可以允许换行的 -->
+<!-- 评价 页面经常会用到这个标签 -->
+<textarea name="textarea" rows="8" cols="40"></textarea>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>

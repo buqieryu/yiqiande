@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cssdemo</title>
+
+  <!-- <link rel="stylesheet" href="mycss.css"  type="text/css"> -->
+<style type="text/css">
+/*.语法：选择html里面，所有class为firstp的元素*/
+ .firstp{
+   color: blue;
+   font-size: 29px;
+ }
+ /*#语法：选择html里面的ID为seconp的元素*/
+ /*在HTML里面，一定不要出现同名的ID*/
+ #secondp{color: #ff6100;
+ font-size: 99px
+ }
+ /*p {}选中html里，所有的p标签*/
+   /*.xxx 选中html里面class="xxx"的标签*/
+   /*#xxx 选中HTML里面id="xxx"的标签*/
+   .firstdiv{
+     width: 10px;
+     height: 20px;
+     background: red;
+     border: 2px dashed blue;
+     /*border-width: 8px;
+     border-style: solid;
+     border-color: blue;*/
+     border-top: 0px;
+
+ }
+.seconddiv{
+  width: 300px;
+  /*height: 500px;*/
+  background: #ff6100;
+  border: 2px solid red;
+  border-top: 50px;
+
+}
+.seconddiv P{
+  color: purple;
+  font-size:20px;
+  font-weight: bolder;/* font-weight 字体变粗*/
+
+font-style:italic;
+
+text-align:left;/*font-style:italic;斜体*/
+
+letter-spacing: 10px;/*字母间距*/
+word-spacing: 10px;
+text-decoration: line-through;
+}
+.seconddiv a{
+  text-decoration:none;
+  color: black;
+  background-color:yellow;
+text-indent: 28px;
+
+line-height: 60px;
+}
+.fiveDiv{
+  width: 500px;
+  border: 2px solid blue;
+  background-color: pink;
+}
+/*A B{}A比起前里面的所有的B*/
+/*A>B紧邻A下一层的B标签*/
+/*空格 孩子+孙子+重孙子，，，，*/
+.fiveDiv>p{
+color: blue;
+font-size: 28px;
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <!-- div用来规划网页布局 -->
+  <div class="firstdiv">
+
+  </div>
+<div class="seconddiv">
+  <p>我是第二个div div里面的P</p>  <a href="###">我是百度首页，你来点我啊</a></div>
+
+<div class="thirddiv"></div>
+<div id="fourthdiv"></div>
+  <!-- 样式css (层叠样式表)   内容 HTMLA -->
+  <!-- 引入css（样式表的三种方法） -->
+    <!-- 1.内联式（直接在标签内部加入样式） -->
+    <!-- a.找到开始标签 -->
+    <!-- b.在标签内部加入样式属性：stlye -->
+    <!-- c.在style里面，开始改变样式 -->
+    <!-- d,一个样式结束。要记得加『；』 -->
+  <!-- 2.嵌入式（在head标签你引入样式） -->
+    <!-- a. <style  type="text/css">确定到某一个标签
+  选择器{color} </style>-->
+
+  <!-- 3.链接式（） -->
+  <!-- <link rel="stylesheet" href="/css/master.css" type="text/css" > -->
+
+
+  </style>
+  <p class="firstp">我是文字</p>
+  <p id="secondp">我是第二个p</p>
+  <p class="firstp">我是第三个p标签</p>
+  <P id="secondp">我是第四个p标签</P>
+  <h2>我是标题</h2>
+
+
+<div class="fiveDiv">
+<div class="miniFiveDiv">
+  <p>我是fiveDiv里面的p1</p>
+<p>我是fiveDiv里面的p2</p>
+<div class="miniFiveDiv">
+
+</div>
+
+<p>我是miniFiveDiv里面的p</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

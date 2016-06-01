@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+.logo{
+background-color:white;
+border: 1px solid white;
+text-align:center;
+padding: 5px;
+/*height: 100px;*/
+}
+.logo img{
+width: 1200px;
+  height: 80px;
+}
+/**是通配符  会选择页面内的所有标签*/
+*{
+padding:0px;
+margin: 0px;
+}
+.nav ul{
+
+  list-style: none;
+}
+.nav{
+/*background-color: pink;
+border: 1px solid blue;*/
+height: 34px;
+
+}
+.nav ul li{
+  float:left;
+  margin-left: 28px;
+  padding-top: 5px;
+}
+.nav ul li a{
+  text-decoration:none;
+  color: black;
+  border: 1px solid lightgreen;
+  padding: 2px 4px 3px;
+  /*border-radius: 6px;*/
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: white;
+}
+.nav ul li a:hover{
+background-color: lightgreen;
+color:white;
+
+}
+.body{
+  background-color: lightblue;
+  border: 1px solid blue;
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  /* margin：000 auto居中*/
+}
+
+.left{width: 400px;
+height: 400px;
+background-color:orange;
+border: 1px solid orange;
+float: left;
+}
+.right{width: 780px;
+height: 400px;
+background-color:blue;
+border: 1px solid orange;
+float: right;
+}
+.footer{
+width: 1200px;
+height: 100px;
+/*background-color: yellow;
+border: 1px solid green;*/
+margin:0 auto;
+margin-top:20px;
+
+}
+.footer table{
+  width: 1100px;
+  height: 100px;
+  /*background-color: white;*/
+  margin:0 auto;
+
+
+
+
+}
+
+
+.footer table tr td{
+color: blue;
+font-family: 宋体;
+font-size: 20px;
+/*background-color: #eee;*/
+text-align: center;
+
+
+
+
+}
+
+
+
+
+  </style>
+  <title>盒式布局</title>
+</head>
+
+
+<body>
+
+<div class="logo"> <img src="111.jpg" alt="">
+</div>
+
+<!-- ul>(li>a[href###])*8 -->
+<div class="nav">
+  <ul>
+    <li><a href="href###">网页</a></li>
+    <li><a href="href###">音乐</a></li>
+    <li><a href="href###">视频</a></li>
+    <li><a href="href###">图片</a></li>
+    <li><a href="href###">购物</a></li>
+    <li><a href="href###">新闻</a></li>
+    <li><a href="href###">问答</a></li>
+    <li><a href="href###">地图</a></li>
+
+
+  </ul>
+
+
+</div>
+<div class="body">
+  <div class="left"></div>
+  <div class="right"></div>
+</div>
+<div class="footer">
+<table>
+  <tr>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+  </tr>
+  <tr>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+    <td>测试数据</td>
+  </tr>
+</table>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

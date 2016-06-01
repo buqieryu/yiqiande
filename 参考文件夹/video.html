@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+</head>
+<body>
+
+<video id="video123456" src="vo.mp4" width=500 height=500 autoplay poster="logo.png" controls></video>
+
+<br><br><br>
+<button type="button" onclick="bofang()">播放</button>
+<button type="button" onclick="zanting()">暂停</button>
+<button type="button" onclick="kuaijin()">快进</button>
+<button type="button" onclick="kuaitui()">快退</button>
+<button type="button" onclick="jingyin(this)">静音</button>
+<script type="text/javascript">
+var aaa=document.getElementById('video123456')
+function bofang(){
+aaa.play();
+}
+function zanting(){
+  aaa.pause();
+}
+function kuaijin(){
+  aaa.currentTime=aaa.currentTime+10;
+}
+function kuaitui(){
+  aaa.currentTime=aaa.currentTime-10;
+}
+function jingyin(buttonObj){
+
+    if(aaa.muted) {
+     aaa.muted=false;
+     buttonObj.innerHTML="静音"
+      }
+      else{
+       //  1.让声音停止
+       aaa.muted = true;
+       //  2.让文字显示"打开声音"
+
+       buttonObj.innerHTML= "打开声音"
+    }
+}
+</script>
+</body>
+</html>

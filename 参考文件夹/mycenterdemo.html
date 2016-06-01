@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mycenterdemo</title>
+<!-- 1>行元素居中 text-align:center
+写在被居中元素的父标签之内
+（或者是爷，，，标签之内）
+（因为标签有继承的特性）
+2>块元素居中
+a，父级宽度确定
+在自身标签之内
+margin:0 auto
+b父级宽度不确定-->
+  <!-- yi。孩子  display：inline-block -->
+      <!-- 父亲  text-align：center； -->
+<!-- er:给浮动元素做居中布局
+让浮动的元素想对自己向右偏移50%
+（relative；left 50%） -->
+<!-- 让浮动元素的孩子在偏离回来50% -->
+<!-- span.绝对定位
+让父试图内容偏离50%
+   内容 position：-->
+
+<style type="text/css">
+
+/*.big{
+width: 1000px;
+height: 600px;
+  background-color: pink;
+  margin:0 auto;*/
+  /*要求子集的所有孩子《行元素》居中*/
+  /*text-align:center;
+}*/
+
+/*p{
+background-color: red;
+width: 300px;
+}
+.mini{
+width: 100px;
+height: 100px;
+background-color: blue;
+margin:0 auto;
+}
+.second{
+width: 100px;
+height: 100px;
+  background-color: red;
+  text-align: center;*/
+  /*display:inline-block;*/
+
+/*}*/
+/*div ul{
+  list-style: none;*/
+  /*display: inline-block;*/
+/*}*/
+/*div ul li{
+float: left;
+margin:5px 6px;
+}
+.one{
+width: 600px;
+height: 300px;
+  background-color: pink;
+}*/
+
+/*
+.two{
+  width: 400px;
+  height: 200px;
+  background-color:pink;
+
+}
+
+div ul{
+
+position: relative;
+left: 50%
+}
+div ul li{
+float: left;
+margin: 10px;
+position: relative;
+right: 50%;
+}*/
+.three{
+  width: 300px;
+  height: 200px;
+  background-color: pink;
+}
+
+.three ul li{
+float: left;
+margin: 5px 5px;
+
+
+
+}
+div ul{
+list-style: none;
+position: absolute;
+left: 50%
+width:fit-content;
+width:-moz-fit-content;
+didth:-webkit-fit-content;
+margin-left:auto;
+margin-left:auto;
+margin-right:auto;
+}
+
+div ul li{
+float: left
+margin:5px;
+position: absolute;
+right: 50%;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<!-- 1. 行元素居中
+  2.父级定宽，子集margin 0 auto -->
+<!-- <div class="big">行孩子居中
+    <a href="">我是胖大海</a><br>
+
+<div class="small"><img src="102.png" alt=""></div>
+
+<p>我不是</p>
+<div class="mini">我div</div>
+<div class="second">我是默默</div> -->
+<!-- <ul>
+  <li>就回家感觉</li>
+  <li>不讲话和国际化</li>
+</ul>
+
+
+</div><br> -->
+
+
+
+
+
+<div class="three">
+  <div class=""><ul>
+    <li>模块</li>
+    <li>分类</li>
+  </ul>
+
+  </div>
+
+</div>
+
+
+
+
+</body>
+</html>

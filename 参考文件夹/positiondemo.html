@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>positionsdemo</title>
+  <style type="text/css">
+div{
+border: 1px solid red;
+}
+/*position；定位*/
+
+/*static    默认的
+absolute  绝对定位
+relative  相对定位
+fixed     固定定位*/
+
+/*top  right  bottom  left*/
+/*一般定位的时候，采用的是相邻的两个边框来定位*/
+/*absolute  如果  父级不是static，会跟着父级来动
+            如果   父级的父级也不是static 会按照自己最近的父级来动
+            如果  向上的层次都是static   直接定位到body的某一个位置*/
+/*relative  相对于自己原来的位置定位*/
+/*fixed   直接焊接到浏览器边框上*/
+absolute  绝对定位，
+          当元素性质发生改变的时候，改变之前的位置已经不存在了，会被其他元素顶替掉
+relation  相对定位
+          当元素位置发生改变的时候，改变之前的位置还存在 不会被其他元素顶替掉自己的位置
+
+.big{
+width: 300px;
+height: 300px;
+background-color: yellow;
+}
+.first{
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  /*position: relative;
+  left: 10px;
+  top: 10px;*/
+}
+.second{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+/*position:static;
+  left: 10px;
+  top: 10px;*/
+}
+.third{
+width: 70px;
+height: 70px;
+background-color: lightblue;
+/*position: relative;
+left:50px;
+top: 50px;*/
+}
+.thirdA{
+width: 20px;
+height: 20px;
+background-color: lightgreen;
+/*position: absolute;
+left: 20px;
+top: 20px;*/
+
+}
+  </style>
+</head>
+<body>
+<div class="big">
+  <div class="first">
+    <div class="second">
+      <div class="third">哥</div>
+      <div class="thirdA">弟</div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
